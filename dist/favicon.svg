@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Premier Transmissions favicon</title>
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0a660"/>
+      <stop offset="100%" stop-color="#b65f2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#101419"/>
+  <rect x="5" y="5" width="54" height="54" rx="15" fill="url(#g)"/>
+  <path d="M17 20h18c8 0 13 4 13 11 0 5-3 8-8 9l9 11H38l-8-10h-3v10H17V20zm10 13h7c3.3 0 5.1-1.5 5.1-4.1S37.2 25 34 25h-7v8z" fill="#15110d"/>
+</svg>
