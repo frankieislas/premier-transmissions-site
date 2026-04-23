@@ -1,3 +1,8 @@
+const SHOP_PHOTOS = {
+  exterior: "assets/premier-exterior.jpg",
+  storefront: "assets/premier-storefront.jpg"
+};
+
 const schedule = [
   { day: "Monday", open: 8 * 60, close: 17 * 60 },
   { day: "Tuesday", open: 8 * 60, close: 17 * 60 },
@@ -123,5 +128,19 @@ function setupReveal() {
   items.forEach((item) => observer.observe(item));
 }
 
+function hydrateShopPhotos() {
+  const images = document.querySelectorAll("[data-shop-photo]");
+
+  images.forEach((image) => {
+    const key = image.getAttribute("data-shop-photo");
+    const src = SHOP_PHOTOS[key];
+
+    if (src) {
+      image.src = src;
+    }
+  });
+}
+
+hydrateShopPhotos();
 applyOpenState();
 setupReveal();
